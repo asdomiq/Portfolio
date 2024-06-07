@@ -26,6 +26,7 @@
             <a href="#about">A propos</a>
             <a href="#education">Parcours</a>
             <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
             <a href="#contact">Contact</a>
 
             <span class="active-nav"></span>
@@ -48,8 +49,8 @@
             </p>
 
             <div class="btn-box">
-                <a href="#" class="btn">M'engager ?</a>
-                <a href="#contact" class="btn">Parlons-en !</a>
+                <a href="cv.pdf" class="btn" id="download-cv-btn">Download CV</a>
+                <a href="#contact" class="btn">M'engager ?</a>
                 <span class="animate" style="--i:5;"></span>
             </div>
         </div>
@@ -230,45 +231,88 @@
         </div>
     </section>
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-    <h2 class="heading">Me <span>Contacter</span><span class="animate scroll" style="--i:1;"></span></h2>
+<!-- projects section design -->
+<section class="projects" id="projects">
+    <h2 class="heading">Mes <span>Projets</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-    <form id="contactForm">
-        <div class="input-box">
-            <div class="input-field">
-                <input type="text" name="name" placeholder="Nom entier" required>
-                <span class="focus"></span>
+    <div class="projects-row">
+        <div class="projects-column">
+            <h3 class="title">2023 - 2024<span class="animate scroll" style="--i:2;"></span></h3>
+
+            <div class="projects-box">
+                <div class="projects-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2023</div>
+                        <h3>BiblioDrive</h3>
+                        <p>Site web réalisé pour un projet permettant de faire une simulation d'emprunt de livre !</p>
+                        <div class="btn-box btns">
+                            <a href="/Portfolio/BiblioDrive/index.php" class="btn">BiblioDrive</a>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
-            <div class="input-field">
-                <input type="email" name="email" placeholder="Email" required>
-                <span class="focus"></span>
+        </div>
+
+        <div class="projects-column">
+            <h3 class="title">2024 - 2025<span class="animate scroll" style="--i:4;"></span></h3>
+
+            <div class="projects-box">
+                <div class="projects-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2024</div>
+                        <h3>ATLANTIK</h3>
+                        <p>Description du projet 2. Incluez les détails et les technologies utilisées.</p>
+                        <div class="btn-box btns">
+                            <a href="lien_vers_projet_2" class="btn">Voir Projet</a>
+                        </div>
+                    </div>
+                </div>
+                <span class="animate scroll" style="--i:5;"></span>
             </div>
-            <span class="animate scroll" style="--i:3;"></span>
         </div>
-        <div class="input-box">
-            <div class="input-field">
-                <input type="number" name="phone" placeholder="Numéro de téléphone" required>
-                <span class="focus"></span>
-            </div>
-            <div class="input-field">
-                <input type="text" name="subject" placeholder="Sujet du Mail" required>
-                <span class="focus"></span>
-            </div>
-            <span class="animate scroll" style="--i:5;"></span>
-        </div>
-        <div class="textarea-field">
-            <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
-            <span class="focus"></span>
-            <span class="animate scroll" style="--i:7;"></span>
-        </div>
-        <div class="btn-box btns">
-            <button type="submit" class="btn">Envoyer !</button>
-            <span class="animate scroll" style="--i:9;"></span>
-        </div>
-    </form>
+    </div>
 </section>
 
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Me <span>Contacter</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <form id="contactForm">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="name" placeholder="Nom entier" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" name="phone" placeholder="Numéro de téléphone" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="subject" placeholder="Sujet du Mail" required>
+                    <span class="focus"></span>
+                </div>
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+            <div class="textarea-field">
+                <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+                <span class="focus"></span>
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Envoyer !</button>
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </form>
+    </section>
 
     <!-- footer design -->
     <footer class="footer">
@@ -287,7 +331,17 @@
         </div>
     </footer>
 
-
+    <script>
+        document.getElementById("download-cv-btn").addEventListener("click", function () {
+            window.location.href = 'cv.html';
+            var link = document.createElement('a');
+            link.href = 'cv.html';
+            link.download = 'cv.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
