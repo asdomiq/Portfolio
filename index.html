@@ -49,7 +49,7 @@
 
             <div class="btn-box">
                 <a href="#" class="btn">M'engager ?</a>
-                <a href="#" class="btn">Parlons-en !</a>
+                <a href="#contact" class="btn">Parlons-en !</a>
                 <span class="animate" style="--i:5;"></span>
             </div>
         </div>
@@ -105,10 +105,7 @@
                         <div class="content">
                             <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
                             <h3>Lycée technologique - Option SIG</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Blanditiis dolorem harum
-                                dolorum debitis. Magni, iste! Perferendis
-                                laborum reprehenderit dolorum totam.</p>
+                            <p></p>
                         </div>
                     </div>
 
@@ -116,10 +113,7 @@
                         <div class="content">
                             <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
                             <h3>Lycée technologique - Option SIG</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Blanditiis dolorem harum
-                                dolorum debitis. Magni, iste! Perferendis
-                                laborum reprehenderit dolorum totam.</p>
+                            <p></p>
                         </div>
                     </div>
 
@@ -127,10 +121,7 @@
                         <div class="content">
                             <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
                             <h3>Brevet de Technicien Supérieur - SIO</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Blanditiis dolorem harum
-                                dolorum debitis. Magni, iste! Perferendis
-                                laborum reprehenderit dolorum totam.</p>
+                            <p></p>
                         </div>
                     </div>
 
@@ -146,10 +137,7 @@
                         <div class="content">
                             <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
                             <h3>Stage découverte au CNAM - Ploufragan</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Blanditiis dolorem harum
-                                dolorum debitis. Magni, iste! Perferendis
-                                laborum reprehenderit dolorum totam.</p>
+                            <p></p>
                         </div>
                     </div>
 
@@ -157,10 +145,7 @@
                         <div class="content">
                             <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
                             <h3>Stage informatique - Mercedes</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Blanditiis dolorem harum
-                                dolorum debitis. Magni, iste! Perferendis
-                                laborum reprehenderit dolorum totam.</p>
+                            <p></p>
                         </div>
                     </div>
 
@@ -168,10 +153,7 @@
                         <div class="content">
                             <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
                             <h3>Stage Developpeur Web - Alvaria Development</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Blanditiis dolorem harum
-                                dolorum debitis. Magni, iste! Perferendis
-                                laborum reprehenderit dolorum totam.</p>
+                            <p></p>
                         </div>
                     </div>
 
@@ -250,48 +232,43 @@
 
     <!-- contact section design -->
     <section class="contact" id="contact">
-        <h2 class="heading">Me <span>Contacter</span><span class="animate scroll" style="--i:1;"></span></h2>
+    <h2 class="heading">Me <span>Contacter</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" placeholder="Nom entier" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email" required>
-                    <span class="focus"></span>
-                </div>
-
-                <span class="animate scroll" style="--i:3;"></span>
-            </div>
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Numéro de téléphone" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Sujet du Mail" required>
-                    <span class="focus"></span>
-                </div>
-
-                <span class="animate scroll" style="--i:5;"></span>
-            </div>
-
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message" required></textarea>
+    <form id="contactForm">
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" name="name" placeholder="Nom entier" required>
                 <span class="focus"></span>
-
-                <span class="animate scroll" style="--i:7;"></span>
             </div>
-
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Envoyer !</button>
-
-                <span class="animate scroll" style="--i:9;"></span>
+            <div class="input-field">
+                <input type="email" name="email" placeholder="Email" required>
+                <span class="focus"></span>
             </div>
-        </form>
-    </section>
+            <span class="animate scroll" style="--i:3;"></span>
+        </div>
+        <div class="input-box">
+            <div class="input-field">
+                <input type="number" name="phone" placeholder="Numéro de téléphone" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" name="subject" placeholder="Sujet du Mail" required>
+                <span class="focus"></span>
+            </div>
+            <span class="animate scroll" style="--i:5;"></span>
+        </div>
+        <div class="textarea-field">
+            <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+            <span class="focus"></span>
+            <span class="animate scroll" style="--i:7;"></span>
+        </div>
+        <div class="btn-box btns">
+            <button type="submit" class="btn">Envoyer !</button>
+            <span class="animate scroll" style="--i:9;"></span>
+        </div>
+    </form>
+</section>
+
 
     <!-- footer design -->
     <footer class="footer">
